@@ -25,7 +25,6 @@ class PrimeMinisters
   attr_accessor(:prime_ministers)
 
   def initialize
-
     @prime_ministers = [
       {
         :name => "Neville Chamberlain",
@@ -51,11 +50,9 @@ class PrimeMinisters
   def list_all_consituencies
     @prime_ministers.each {|pm| puts pm[:constituency]}
   end
-
 end
 
 prime_ministers = PrimeMinisters.new
-
 prime_ministers.list_all_consituencies
 
 
