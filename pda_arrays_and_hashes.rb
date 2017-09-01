@@ -6,56 +6,82 @@ class NorseGods
     @name = ["Odin", "Freyja", "Loki"]
   end
 
-  def add_god(god)
-    @name.push(god)
+  def sort_alphabetically()
+    puts @name.sort
   end
-end
-
 
 norse_gods = NorseGods.new
+norse_gods.sort_alphabetically()
 
-puts norse_gods.name
-norse_gods.add_god("Dagr")
-puts norse_gods.name
-
-
-
-class PrimeMinisters
-
-  attr_accessor(:prime_ministers)
-
-  def initialize
-    @prime_ministers = [
-      {
-        :name => "Neville Chamberlain",
-        :party => "Conservative",
-        :constituency => "Birmingham Edgebaston",
-        :year_of_death => 1940
-      },
-       {
-        :name => "Winston Churchill",
-        :party => "Conservative",
-        :constituency => "Epping",
-        :year_of_death => 1965
-      },
-      {
-        :name => "Clement Atlee",
-        :party => "Labour",
-        :constituency => "Limehouse",
-        :year_of_death => 1967
-      }
-    ]
-  end
-
-  def list_all_consituencies
-    @prime_ministers.each {|pm| puts pm[:constituency]}
-  end
 end
 
-prime_ministers = PrimeMinisters.new
-prime_ministers.list_all_consituencies
 
 
+
+
+
+
+
+
+#
+# puts norse_gods.name
+# norse_gods.add_god("Dagr")
+# puts norse_gods.name
+#
+#
+# def add_god(god)
+#   @name.push(god)
+# end
+# end
+
+# class PrimeMinisters
+#
+#   attr_accessor(:prime_ministers)
+#
+#   def initialize
+#     @prime_ministers = [
+#       {
+#         :name => "Neville Chamberlain",
+#         :party => "Conservative",
+#         :constituency => "Birmingham Edgebaston",
+#         :year_of_death => 1940
+#       },
+#        {
+#         :name => "Winston Churchill",
+#         :party => "Conservative",
+#         :constituency => "Epping",
+#         :year_of_death => 1965
+#       },
+#       {
+#         :name => "Clement Atlee",
+#         :party => "Labour",
+#         :constituency => "Limehouse",
+#         :year_of_death => 1967
+#       }
+#     ]
+#   end
+#
+#   def search_name(order)
+#     puts @prime_ministers[order][:name]
+#   end
+# end
+#
+# prime_ministers = PrimeMinisters.new
+# prime_ministers.search_name(0)
+#
+#
+#
+
+
+#   def list_all_consituencies
+#     @prime_ministers.each {|pm| puts pm[:constituency]}
+#   end
+# end
+#
+# prime_ministers = PrimeMinisters.new
+# prime_ministers.list_all_consituencies
+#
+#
 
 
 
