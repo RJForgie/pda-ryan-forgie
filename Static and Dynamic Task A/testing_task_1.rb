@@ -19,13 +19,13 @@ dif max a b #Dif should be def, also needs brackets and a comma
   else
   b #Indentation needs changed
   end
-end #Needs to return i
+end
 end #Extra end that needs deleted
 
 def looper
   for i in 1..10
   puts i #Indentation
-  end
+  end #Needs to return i
 end
 
 failures = 0
